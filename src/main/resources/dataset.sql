@@ -1,0 +1,4 @@
+USE `accounts`;
+LOCK TABLES `role` WRITE;
+INSERT INTO `role` VALUES (1,'ROLE_USER');
+UNLOCK TABLES;

@@ -29,7 +29,7 @@ public class Role {
         this.name = name;
     }
 
-    @ManyToMany(targetEntity = User.class, mappedBy = "roles")
+    @ManyToMany(targetEntity = User.class, mappedBy = "roles", cascade={CascadeType.ALL})
     public Set<User> getUsers() {
         return users;
     }
